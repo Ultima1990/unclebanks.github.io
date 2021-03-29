@@ -3659,6 +3659,11 @@ const ROUTES: Routes = {
         },
     },
     Fiore: {
+        _unlock: {
+            badges: {
+                'Beacon Badge': true,
+            },
+        },
         _global: {
             pokes: [],
             rarePokes: [],
@@ -3685,9 +3690,33 @@ const ROUTES: Routes = {
                 },
             },
         },
+        labyrinthGrove: {
+            name: 'Labyrinth Grove',
+            pokes: ['Ivysaur', 'Venusaur', 'Wartortle', 'Beedrill', 'Pikachu', 'Jigglypuff', 'Weepinbell', 'Cyndaquil', 'Quilava', 'Spinarak', 'Pichu', 'Hoppip', 'Phanpy', 'Murkrow', 'Marshtomp', 'Beautifly', 'Taillow', 'Swellow', 'Nincada', 'Ninjask'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'ringTown',
+            _unlock: {
+                badges: {
+                    'Camerupt Badge': true,
+                },
+            },
+        },
+        kisaraPlain: {
+            name: 'Kisara Plain',
+            pokes: ['Spearow', 'Abra', 'Dodrio', 'Tangela', 'Tauros', 'Donphan', 'Torchic', 'Kirlia', 'Spoink'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'ringTown',
+            _unlock: {
+                badges: {
+                    'Camerupt Badge': true,
+                },
+            },
+        },
         krokkaTunnel: {
             name: 'Krokka Tunnel',
-            pokes: ['Bellsprout', 'Paras', 'Magnemite', 'Poliwag'],
+            pokes: ['Bellsprout', 'Paras', 'Magnemite', 'Poliwag', 'Pichu'],
             minLevel: 2,
             maxLevel: 5,
             respawn: 'ringTown',
@@ -3699,13 +3728,29 @@ const ROUTES: Routes = {
         },
         krokkaTunnel2: {
             name: 'Krokka Tunnel 2',
-            pokes: ['Zubat', 'Diglett', 'Poliwag', 'Poliwhirl', 'Machop', 'Geodude', 'Graveler', 'Krabby', 'Spinarak', 'Snubbull', 'Kirlia', 'Hariyama', 'Crawdaunt'],
+            pokes: ['Zubat', 'Diglett', 'Bellsprout', 'Poliwag', 'Poliwhirl', 'Machop', 'Geodude', 'Graveler', 'Magneton', 'Krabby', 'Spinarak', 'Snubbull', 'Kirlia', 'Hariyama', 'Crawdaunt'],
             minLevel: 2,
             maxLevel: 5,
             respawn: 'fallCityRangerBase',
             _unlock: {
                 badges: {
-                    'Beacon Badge': true,
+                    'Politoed Badge': true,
+                },
+            },
+        },
+        tiffany1: {
+            name: 'Tiffany 1',
+            town: true,
+            gymLeader: {
+                name: 'Tiffany',
+                badge: 'Camerupt Badge',
+                poke: [
+                    ['Camerupt', 24],
+                ],
+            },
+            _unlock: {
+                badges: {
+                    'Politoed Badge': true,
                 },
             },
         },
@@ -3780,7 +3825,7 @@ const ROUTES: Routes = {
         },
         waterworks: {
             name: 'Waterworks',
-            pokes: ['Raticate', 'Oddish', 'Drowzee', 'Grimer', 'Muk', 'Koffing', 'Magnemite', 'Magneton', 'Tangela', 'Totodile', 'Croconaw', 'Meditite', 'Corphish'],
+            pokes: ['Raticate', 'Oddish', 'Drowzee', 'Grimer', 'Muk', 'Koffing', 'Magnemite', 'Magneton', 'Tangela', 'Totodile', 'Croconaw', 'Meditite', 'Corphish', 'Crawdaunt'],
             minLevel: 2,
             maxLevel: 5,
             respawn: 'fallCityRangerBase',
@@ -3801,13 +3846,106 @@ const ROUTES: Routes = {
         },
         oliveJungle: {
             name: 'Olive Jungle',
-            pokes: ['Ekans', 'Mankey', 'Primeape', 'Spinarak', 'Politoed', 'Heracross', 'Phanpy', 'Gligar', 'Treecko', 'Grovyle', 'Wurmple', 'Beautifly', 'Slakoth', 'Lotad', 'Lombre', 'Electrike'],
+            pokes: ['Ekans', 'Mankey', 'Primeape', 'Paras', 'Spinarak', 'Heracross', 'Phanpy', 'Gligar', 'Treecko', 'Grovyle', 'Wurmple', 'Beautifly', 'Slakoth', 'Lotad', 'Lombre', 'Ludicolo', 'Electrike'],
             minLevel: 2,
             maxLevel: 5,
             respawn: 'summerlandRangerBase',
             _unlock: {
                 badges: {
                     'Lapras Badge': true,
+                },
+            },
+        },
+        jungleClearing: {
+            name: 'Jungle Clearing',
+            town: true,
+            gymLeader: {
+                name: 'Politoed',
+                badge: 'Politoed Badge',
+                poke: [
+                    ['Politoed', 24],
+                ],
+            },
+            _unlock: {
+                badges: {
+                    'Lapras Badge': true,
+                },
+            },
+        },
+        jungleRelic: {
+            name: 'Jungle Relic',
+            pokes: ['Meowth', 'Machop', 'Geodude', 'Magnemite', 'Gligar', 'Treecko', 'Wurmple', 'Seedot', 'Bagon', 'Shelgon'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'summerlandRangerBase',
+            _unlock: {
+                badges: {
+                    'Camerupt Badge': true,
+                },
+            },
+        },
+        relicChallenge: {
+            name: 'Relic Challenge',
+            town: true,
+            gymLeader: {
+                name: 'Challenge',
+                badge: 'RelicChallenge Badge',
+                poke: [
+                    ['Kingdra', 24],
+                    ['Salamence', 24],
+                    ['Flygon', 24],
+                    ['Charizard', 24],
+                ],
+            },
+            _unlock: {
+                badges: {
+                    'Camerupt Badge': true,
+                },
+            },
+        },
+        belowtheRelic: {
+            name: 'Below the Relic',
+            pokes: ['Charmander', 'Meowth', 'Poliwhirl', 'Graveler', 'Rapidash', 'Rhydon', 'Magmar', 'Slugma', 'Magcargo', 'Houndoom', 'Sneasel', 'Sceptile', 'Electrike', 'Manectric', 'Numel', 'Beldum'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'summerlandRangerBase',
+            _unlock: {
+                badges: {
+                    'RelicChallenge Badge': true,
+                },
+            },
+        },
+        clyde1: {
+            name: 'Clyde 1',
+            town: true,
+            gymLeader: {
+                name: 'Clyde',
+                badge: 'Slaking Badge',
+                poke: [
+                    ['Slaking', 24],
+                ],
+            },
+            _unlock: {
+                badges: {
+                    'RelicChallenge Badge': true,
+                },
+            },
+        },
+        Gordor1: {
+            name: 'Gordor 1',
+            town: true,
+            gymLeader: {
+                name: 'Gordor',
+                badge: 'Entei Badge',
+                poke: [
+                    ['Magmar', 24],
+                    ['Magmar', 24],
+                    ['Entei', 24],
+                ],
+            },
+            _unlock: {
+                badges: {
+                    'Slaking Badge': true,
                 },
             },
         },
