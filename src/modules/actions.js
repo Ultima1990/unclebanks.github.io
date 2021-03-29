@@ -99,6 +99,20 @@ export default (player, combatLoop, enemy, town, story, appModel) => {
                 alert('You have not unlocked this region yet');
             }
         },
+        goToFiore: function () {
+            if (player.regionUnlocked('Fiore')) {
+                player.settings.currentRegionId = 'Fiore';
+                if (Object.keys(ROUTES[player.settings.currentRegionId])[0].charAt(0) !== '_') {
+                    this.changeRoute(Object.keys(ROUTES[player.settings.currentRegionId])[0]);
+                } else if (Object.keys(ROUTES[player.settings.currentRegionId])[1].charAt(0) !== '_') {
+                    this.changeRoute(Object.keys(ROUTES[player.settings.currentRegionId])[1]);
+                } else {
+                    this.changeRoute(Object.keys(ROUTES[player.settings.currentRegionId])[2]);
+                }
+            } else {
+                alert('You have not unlocked this region yet');
+            }
+        },
         goToUnova: function () {
             if (player.regionUnlocked('Unova')) {
                 player.settings.currentRegionId = 'Unova';

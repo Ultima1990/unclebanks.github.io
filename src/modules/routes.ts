@@ -3573,6 +3573,160 @@ const ROUTES: Routes = {
             sinnohSuperRod: 1,
         },
     },
+    Fiore: {
+        _global: {
+            pokes: [],
+            rarePokes: [],
+            superRare: [],
+        },
+        ringTownRangerBase: {
+            name: 'Ring Town Ranger Base',
+            town: true,
+            _unlock: {
+                badges: {
+                    'Beacon Badge': true,
+                },
+            },
+        },
+        lyraForest: {
+            name: 'Lyra Forest',
+            pokes: ['Bellsprout', 'Chikorita', 'Pichu', 'Torchic', 'Combusken', 'Mudkip', 'Zigzagoon', 'Taillow'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'ringTown',
+            _unlock: {
+                badges: {
+                    'Beacon Badge': true,
+                },
+            },
+        },
+        krokkaTunnel: {
+            name: 'Krokka Tunnel',
+            pokes: ['Bellsprout', 'Paras', 'Magnemite', 'Poliwag'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'ringTown',
+            _unlock: {
+                badges: {
+                    'Beacon Badge': true,
+                },
+            },
+        },
+        krokkaTunnel2: {
+            name: 'Krokka Tunnel 2',
+            pokes: ['Zubat', 'Diglett', 'Poliwag', 'Poliwhirl', 'Machop', 'Geodude', 'Graveler', 'Krabby', 'Spinarak', 'Snubbull', 'Kirlia', 'Hariyama', 'Crawdaunt'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'fallCityRangerBase',
+            _unlock: {
+                badges: {
+                    'Beacon Badge': true,
+                },
+            },
+        },
+        eastRoad: {
+            name: 'East Road',
+            town: true,
+            gymLeader: {
+                name: 'Rhydon',
+                badge: 'Rhydon Badge',
+                poke: [
+                    ['Rhydon', 24],
+                ],
+            },
+            _unlock: {
+                badges: {
+                    'Beacon Badge': true,
+                },
+            },
+        },
+        fallCity: {
+            name: 'Fall City',
+            pokes: ['Venonat', 'Meowth', 'Krabby', 'Staryu', 'Snubbull', 'Ludicolo', 'Wingull', 'Makuhita', 'Skitty'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'fallCityRangerBase',
+            _unlock: {
+                badges: {
+                    'Rhydon Badge': true,
+                },
+            },
+        },
+        fallCityRangerBase: {
+            name: 'Fall City Ranger Base',
+            town: true,
+            _unlock: {
+                badges: {
+                    'Rhydon Badge': true,
+                },
+            },
+        },
+        fallCityHarbor: {
+            name: 'Fall City Harbor',
+            town: true,
+            gymLeader: {
+                name: 'Lapras',
+                badge: 'Lapras Badge',
+                poke: [
+                    ['Lapras', 24],
+                ],
+            },
+            _unlock: {
+                badges: {
+                    'Machoke Badge': true,
+                },
+            },
+        },
+        joyClockTower: {
+            name: 'Joy Clock Tower',
+            town: true,
+            gymLeader: {
+                name: 'Machoke',
+                badge: 'Machoke Badge',
+                poke: [
+                    ['Machoke', 24],
+                ],
+            },
+            _unlock: {
+                badges: {
+                    'Rhydon Badge': true,
+                },
+            },
+        },
+        waterworks: {
+            name: 'Waterworks',
+            pokes: ['Raticate', 'Oddish', 'Drowzee', 'Grimer', 'Muk', 'Koffing', 'Magnemite', 'Magneton', 'Tangela', 'Totodile', 'Croconaw', 'Meditite', 'Corphish'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'fallCityRangerBase',
+            _unlock: {
+                badges: {
+                    'Machoke Badge': true,
+                },
+            },
+        },
+        summerlandRangerBase: {
+            name: 'Summerland Ranger Base',
+            town: true,
+            _unlock: {
+                badges: {
+                    'Lapras Badge': true,
+                },
+            },
+        },
+        oliveJungle: {
+            name: 'Olive Jungle',
+            pokes: ['Ekans', 'Mankey', 'Primeape', 'Spinarak', 'Politoed', 'Heracross', 'Phanpy', 'Gligar', 'Treecko', 'Grovyle', 'Wurmple', 'Beautifly', 'Slakoth', 'Lotad', 'Lombre', 'Electrike'],
+            minLevel: 2,
+            maxLevel: 5,
+            respawn: 'summerlandRangerBase',
+            _unlock: {
+                badges: {
+                    'Lapras Badge': true,
+                },
+            },
+        },
+    },
     Unova: {
         _unlock: {
             badges: {

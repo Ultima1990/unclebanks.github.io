@@ -35,13 +35,21 @@
         Sinnoh
       </button>
       <button
+        id="fioreButton"
+        onclick="userInteractions.goToFiore()"
+        class="button"
+        value="Fiore"
+      >
+        Fiore
+      </button>
+      <button
         id="unovaButton"
         onclick="userInteractions.goToUnova()"
         class="button"
         value="Unova"
       >
         Unova
-      </button>
+      </button><br>
       <button
         id="kalosButton"
         onclick="userInteractions.goToKalos()"
@@ -49,7 +57,7 @@
         value="Kalos"
       >
         Kalos
-      </button><br>
+      </button>
       <button
         id="alolaButton"
         onclick="userInteractions.goToAlola()"
